@@ -18,5 +18,8 @@ references/
 .DS_Store
 .ipynb_checkpoints/
 data/train.tsv
+<<<<<<< HEAD
 >>>>>>> 89b281c (Checkpoint: Added .gitignore and data folder)
+=======
+>>>>>>> 19d0602 (Updated .gitignore to exclude test.tsv)
 data/test.tsv
