@@ -1,3 +1,4 @@
+
 # Ignore macOS system files
 .DS_Store
 
@@ -13,3 +14,8 @@ notebooks/*
 
 # Ignore everything in the 'references' directory
 references/
+
+.DS_Store
+.ipynb_checkpoints/
+data/train.tsv
+>>>>>>> 89b281c (Checkpoint: Added .gitignore and data folder)
