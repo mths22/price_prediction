@@ -10,7 +10,7 @@ data/
 
 # Ignore everything in the 'notebooks' directory except the dataset_exploration_notebook.ipynb
 notebooks/*
-!notebooks/dataset_exploration_notebook.ipynb
+!notebooks/Sprint_1_notebook.ipynb
 
 # Ignore everything in the 'references' directory
 references/
