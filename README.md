@@ -46,12 +46,12 @@ Here are a few key visual insights discovered during the exploratory data analys
 
 🎯 Target Variable Distribution (Before and After Log Transformation)
 
-![Before Log](image/price_dist_beforeLog)
+![Before Log](image/price_dist_beforeLog.png)
 
 
 The price variable was highly skewed. A log transformation helped achieve a more normal distribution, improving model performance.
 
-![After Log](image/price_dist_afterLog)
+![After Log](image/price_dist_afterLog.png)
 
 🧾 Most Frequent Tokens by Text Column
 
