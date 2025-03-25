@@ -61,11 +61,17 @@ The most common tokens across product descriptions, names, brands, and categorie
 
 
 📁 Organization
+
 Repository Structure
+
 bash
+
 Copy
+
 Edit
+
 price_optimization_project/
+
 │── data/             # Dataset links, processed data (small files)
 │── model/            # Final trained model files (joblib, pickle)
 │── notebooks/        # Jupyter notebooks with analysis & modeling
@@ -76,6 +82,7 @@ price_optimization_project/
 │── conda.yml         # Conda environment setup file
 │── README.md         # Project overview (this file)
 │── LICENSE           # Project licensing information
+
 📊 Dataset
 This project uses real-world datasets to train the models.
 
