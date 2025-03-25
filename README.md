@@ -2,14 +2,17 @@
 Applying data science to optimize pricing strategies.
 
 📄 Executive Summary:
+
 Problem Statement
-Ecommerces usually struggle and spend a lot of time and team efort to figure out the best prices for their products. Good ecommerces also have a decent amount of products coming in everyday into their website and its not that simple to keep pricing these rpoducts very accuratly without the proper tools. If you don't price your products correctly you might miss sales if your product gets too expensive or you might loose some money selling it for a price below the market. 
+
+- Ecommerces usually struggle and spend a lot of time and team efort to figure out the best prices for their products. Good ecommerces also have a decent amount of products coming in everyday into their website and its not that simple to keep pricing these rpoducts very accuratly without the proper tools. If you don't price your products correctly you might miss sales if your product gets too expensive or you might loose some money selling it for a price below the market. 
 
 Data Science Opportunity
-The idea with this price prediction model is to analyse historical products data and train a model that can predict th best prices for a specific product based on this product name, category, description and brand. We intend to do this work using NLP and a well executed preprocessing of our dataset extracting the most of our text features.
+
+- The idea with this price prediction model is to analyse historical products data and train a model that can predict th best prices for a specific product based on this product name, category, description and brand. We intend to do this work using NLP and a well executed preprocessing of our dataset extracting the most of our text features.
 
 Poject Takeaways
-Price optimization can significantly increase revenue by aligning prices with demand and product especification
+- Price optimization can significantly increase revenue by aligning prices with demand and product especification
 A data-driven approach helps avoid guesswork and improves decision-making.
 Implementing the right model ensures pricing strategies are adaptive to market trends.
 
@@ -44,9 +47,11 @@ Here are a few key visual insights discovered during the exploratory data analys
 🎯 Target Variable Distribution (Before and After Log Transformation)
 
 ![Before Log](image/price_dist_beforeLog)
-![After Log](image/price_dist_afterLog)
+
 
 The price variable was highly skewed. A log transformation helped achieve a more normal distribution, improving model performance.
+
+![After Log](image/price_dist_afterLog)
 
 🧾 Most Frequent Tokens by Text Column
 
