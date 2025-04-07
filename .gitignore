@@ -12,6 +12,7 @@ data/
 notebooks/*
 !notebooks/Sprint_1_notebook.ipynb
 !notebooks/sprint_2_notebook.ipynb
+!notebooks/sprint_3_notebook.ipynb
 # Ignore everything in the 'references' directory
 references/
 
