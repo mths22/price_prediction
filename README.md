@@ -83,13 +83,21 @@ The most common tokens across product descriptions, names, brands, and categorie
 
 ### Best Model: Linear Regression with L2 Regularization (Ridge Regression)
 
-- **Performance Metric:**
-  - Mean Absolute Error (MAE): **13.84**
-  - Interpretation: The model's price predictions are, on average, **$13.84 off**.
+- **Performance Metrics (Log Scale):**
+  - **Train R²:** 0.5291
+  - **Test R²:** 0.5121
+  - **Train Mean Absolute Error (MAE):** 13.25
+  - **Test Mean Absolute Error (MAE):** 13.52
+  - **Train Root Mean Squared Error (RMSE):** 33.03
+  - **Test Root Mean Squared Error (RMSE):** 34.53
+
+- **Interpretation:**
+  - The model’s price predictions are, on average, **$13.52 off** from the actual values.
 
 - **Challenges & Improvements:**
   - Initial Overfitting: Caused by dataset distribution and outliers.
   - **Solution:** Removed outliers and applied a log transformation to the target variable, resulting in significant improvement.
+
 
 - **Visualization:**
   ![Model Selection & Performance](image/Model_Performance_Ridge.png)
