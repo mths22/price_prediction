@@ -100,6 +100,7 @@ The most common tokens across product descriptions, names, brands, and categorie
 
 
 - **Visualization:**
+  
   ![Model Selection & Performance](image/Model_Performance_Ridge.png)
 
 ---
