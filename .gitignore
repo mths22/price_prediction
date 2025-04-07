@@ -1,3 +1,7 @@
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
 
 # Ignore macOS system files
 .DS_Store
@@ -17,6 +21,7 @@ notebooks/*
 references/
 
 .DS_Store
+
 .ipynb_checkpoints/
 data/train.tsv
 <<<<<<< HEAD
