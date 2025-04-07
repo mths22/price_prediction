@@ -92,7 +92,7 @@ The most common tokens across product descriptions, names, brands, and categorie
   - **Solution:** Removed outliers and applied a log transformation to the target variable, resulting in significant improvement.
 
 - **Visualization:**
-  ![Model Selection & Performance](image/model_selection_performance.png)
+  ![Model Selection & Performance](image/Model_Performance_Ridge.png)
 
 ---
 
