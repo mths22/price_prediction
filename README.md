@@ -1,96 +1,119 @@
-📌 Price Optimization Project
-Applying data science to optimize pricing strategies.
+# 📌 Price Prediction for E-Commerce
 
-📄 Executive Summary:
+This project aims to leverage data science techniques to automate price prediction for e-commerce products, enhancing pricing accuracy and competitiveness.
 
-Problem Statement
+---
 
-- Ecommerces usually struggle and spend a lot of time and team efort to figure out the best prices for their products. Good ecommerces also have a decent amount of products coming in everyday into their website and its not that simple to keep pricing these rpoducts very accuratly without the proper tools. If you don't price your products correctly you might miss sales if your product gets too expensive or you might loose some money selling it for a price below the market. 
+## 📄 Executive Summary
 
-Data Science Opportunity
+### Problem Statement
 
-- The idea with this price prediction model is to analyse historical products data and train a model that can predict th best prices for a specific product based on this product name, category, description and brand. We intend to do this work using NLP and a well executed preprocessing of our dataset extracting the most of our text features.
+Many e-commerce businesses struggle to find the best prices for their products. They spend significant time and money researching prices to stay competitive. Additionally, e-commerce platforms with high product turnover face challenges in pricing new items accurately and quickly.
 
-Poject Takeaways
-- Price optimization can significantly increase revenue by aligning prices with demand and product especification
-A data-driven approach helps avoid guesswork and improves decision-making.
-Implementing the right model ensures pricing strategies are adaptive to market trends.
+Incorrect pricing can lead to missed sales if the product is priced too high or loss of profit if priced too low.
 
-🚧 Current Progress
-This project is in the modeling and evaluation phase. So far, the following has been completed:
+---
 
-✅ Data cleaning and preprocessing
+### Data Science Opportunity
 
-✅ Exploratory Data Analysis (EDA)
+The proposed solution is to **automate price prediction** by analyzing historical product data and training a model that predicts optimal prices based on product attributes like name, category, description, and brand.
 
-✅ Log transformation to normalize the target variable
+- Utilizing **NLP techniques** for feature extraction and preprocessing.
+- Developing a model capable of providing accurate price predictions based on extracted features.
 
-✅ Text preprocessing using CountVectorizer and token prefixing for context
+---
 
-✅ Baseline modeling using Linear Regression, Random Forest, and XGBoost
+### Project Takeaways
 
-✅ Model evaluation using metrics such as R², RMSE, and MAE
+- **Increased Revenue**: Effective price optimization aligns prices with demand and product specifications.
+- **Data-Driven Decision Making**: Avoids guesswork and enhances strategy formulation.
+- **Adaptive Models**: Implementing appropriate models ensures strategies are aligned with market trends.
 
-✅ Feature importance analysis from each model
+---
 
-Next steps:
+## 🚧 Current Progress
 
-🔄 Expand to larger training samples
+This project is currently in the **modeling and evaluation phase**. Below is a summary of completed tasks and next steps.
 
-🧠 Experiment with more advanced NLP techniques using SpaCy
+### ✅ Completed
 
-⚙️ Hyperparameter tuning and model selection
+- **Data Cleaning and Preprocessing**
+- **Exploratory Data Analysis (EDA)**
+- **Log Transformation**: Normalizing the target variable improved model performance.
+- **Text Preprocessing**: Using `CountVectorizer` and token prefixing for context.
+- **Baseline Modeling**: Implemented models include Linear Regression, Random Forest, and XGBoost.
+- **Model Evaluation**: Metrics used include `R²`, `RMSE`, and `MAE`.
+- **Feature Importance Analysis**: Analysis from various models to identify key features.
 
-📈 EDA Insights
-Here are a few key visual insights discovered during the exploratory data analysis phase:
+### 🔄 Next Steps
 
-🎯 Target Variable Distribution (Before and After Log Transformation)
+- **Expand Training Samples**: Utilizing more data to improve model generalization.
+- **Advanced NLP Techniques**: Implementing `SpaCy` for better feature extraction.
+- **Hyperparameter Tuning and Model Selection**: Refining models for improved accuracy.
 
-![Before Log](image/price_dist_beforeLog.png)
+---
 
+## 📈 EDA Insights
 
-The price variable was highly skewed. A log transformation helped achieve a more normal distribution, improving model performance.
+Here are some key insights discovered during the exploratory data analysis phase:
 
-![After Log](image/price_dist_afterLog.png)
+### 🎯 Target Variable Distribution (Before and After Log Transformation)
 
-🧾 Most Frequent Tokens by Text Column
+The price variable was highly skewed. Applying a log transformation helped achieve a more normal distribution, improving model performance.
 
-![After Log](image/top_15_tokens_desc.png)
+- **Before Log Transformation**
+
+  ![Before Log](image/price_dist_beforeLog.png)
+
+- **After Log Transformation**
+
+  ![After Log](image/price_dist_afterLog.png)
+
+---
+
+### 🧾 Most Frequent Tokens by Text Column
 
 The most common tokens across product descriptions, names, brands, and categories reveal strong signals, especially from brand and category fields.
 
+![Top Tokens](image/top_15_tokens_desc.png)
 
-📁 Organization
+---
 
-Repository Structure
+## 📊 Model Comparison
 
-bash
+### Best Model: Linear Regression with L2 Regularization (Ridge Regression)
 
-Copy
+- **Performance Metric:**
+  - Mean Absolute Error (MAE): **13.84**
+  - Interpretation: The model's price predictions are, on average, **$13.84 off**.
 
-Edit
+- **Challenges & Improvements:**
+  - Initial Overfitting: Caused by dataset distribution and outliers.
+  - **Solution:** Removed outliers and applied a log transformation to the target variable, resulting in significant improvement.
 
-price_optimization_project/
+- **Visualization:**
+  ![Model Selection & Performance](image/model_selection_performance.png)
 
-│── data/             # Dataset links, processed data (small files)
-│── model/            # Final trained model files (joblib, pickle)
-│── notebooks/        # Jupyter notebooks with analysis & modeling
-│── docs/             # Reports, presentations, and summaries
-│── references/       # Research papers, tutorials, relevant materials
-│── src/              # Python scripts refactored from notebooks
-│── .gitignore        # Ignore unnecessary files (e.g., .DS_Store, large datasets)
-│── conda.yml         # Conda environment setup file
-│── README.md         # Project overview (this file)
-│── LICENSE           # Project licensing information
+---
 
-📊 Dataset
-This project uses real-world datasets to train the models.
+## 📌 SHAP Values Analysis
 
-📂 Data Source: https://www.kaggle.com/competitions/mercari-price-suggestion-challenge
+### Insights from SHAP Values:
 
-📜 Data Description:
-Product pricing history
-Sales transactions
-External factors (seasonality, competition)
+- SHAP values identified the **most important numerical features**:
+  - `Shipping` and `item_condition_id` were the most influential.
+- Understanding feature importance highlighted the need for polynomial features to relate numerical variables with tokens for better pattern recognition.
+
+### Challenges with Polynomial Features:
+
+- Polynomial features require significant memory and computational power.
+- Due to these limitations, full implementation has not yet been achieved.
+- Proper implementation could significantly improve model performance.
+
+---
+
+## 📁 Project Organization
+
+
 
 
