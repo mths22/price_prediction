@@ -31,28 +31,6 @@ The proposed solution is to **automate price prediction** by analyzing historica
 
 ---
 
-## 🚧 Current Progress
-
-This project is currently in the **modeling and evaluation phase**. Below is a summary of completed tasks and next steps.
-
-### ✅ Completed
-
-- **Data Cleaning and Preprocessing**
-- **Exploratory Data Analysis (EDA)**
-- **Log Transformation**: Normalizing the target variable improved model performance.
-- **Text Preprocessing**: Using `CountVectorizer` and token prefixing for context.
-- **Baseline Modeling**: Implemented models include Linear Regression, Random Forest, and XGBoost.
-- **Model Evaluation**: Metrics used include `R²`, `RMSE`, and `MAE`.
-- **Feature Importance Analysis**: Analysis from various models to identify key features.
-
-### 🔄 Next Steps
-
-- **Expand Training Samples**: Utilizing more data to improve model generalization.
-- **Advanced NLP Techniques**: Implementing `SpaCy` for better feature extraction.
-- **Hyperparameter Tuning and Model Selection**: Refining models for improved accuracy.
-
----
-
 ## 📈 EDA Insights
 
 Here are some key insights discovered during the exploratory data analysis phase:
